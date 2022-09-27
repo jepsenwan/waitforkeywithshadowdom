@@ -78,17 +78,4 @@ selectorTxt, /* Required: The jQuery selector string that
     waitForKeyElements.controlObj = controlObj;
 }
  
-// wait until page loaded
-waitForKeyElements ("video", addControlsToVideo);
- 
-function addControlsToVideo (player) {
-    // var player = jNode.querySelector("video");
-    player.setAttribute("controls", "");
-    player.setAttribute("z-index", 1000);
-    player.style.zIndex = 1000;
-    if (playerVolume != -1) {
-        player.volume = playerVolume;
-    }
-}
- 
  
